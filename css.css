@@ -169,3 +169,28 @@ footer a {
   color: #160d03;
   text-decoration: none;
 }
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  #mid {
+    margin-left: 50vw;
+    transform: translate(-50%);
+    margin-bottom: 30rem;
+  }
+  #contanier{
+    flex-wrap: wrap;
+  }
+  
+  #desktop {
+    display: none;
+  }
+  
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  #mid {
+    margin-left: 0px;
+    width: 100%;
+    margin-bottom: 10vh;
+  }
+}

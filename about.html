@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./image/favicon.jpg" type="image/x-icon" />
 
     <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="./media.css/navigation.css">
   </head>
 
   <header>
@@ -20,29 +21,30 @@
     </div>
   </header>
   <body>
-    <div id="navigation">
-      <div id="logo">
-        <a href="./index.html">
-          <img class="hello" src="./image/logo.png" alt="MONOCLES logo"
-        /></a>
-      </div>
-
-      <nav >
-        <div class="mobile-view">
-            <div class="hamburger" onclick="openMenu()">&#8801;</div>
-        </div>
-        <ul class="tablet-desktop">
-          <li><a href="./index.html">Home </a></li>
-          <li><a href="./about.html">About Us</a></li>
-          <li><a href="./team.html">Our Team</a></li>
-          <li><a href="./specials.html">Specials</a></li>
-          <li><a href="./training.html"> Training</a></li>
-          <li><a href="./media.html">Media </a></li>
-          <li><a href="./faqs.html">FAQs</a></li>
-          <li><a href="./contact.html">Contact Us </a></li>
-        </ul>
-      </nav>
+ 
+  <!----Use the nav area to add hyperlinks to other pages within the website-->
+  <div id="navigation">
+    <div id="logo">
+      <a href="./index.html">
+        <img class="hello" src="./image/logo.png" alt="MONOCLES logo"></a>
     </div>
+
+    <nav>
+      <div class="mobile-hamburger mobile-only" onclick="menu()">&#9776;</div>
+      <ul class="nav-list remove-nav" id="navbar">
+        
+        <div class="close-icon mobile-only" onclick="menu()">&#10060</div>
+        <li><a href="./index.html">Home </a> </li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./team.html">Our Team</a> </li>
+        <li><a href="./specials.html">Specials</a> </li>
+        <li><a href="./training.html"> Training</a></li>
+        <li><a href="./media.html">Media </a></li>
+        <li><a href="./faqs.html">FAQs</a></li>
+        <li><a href="./contact.html">Contact Us </a></li>
+      </ul>
+    </nav>
+  </div>
 
     <section class="mobile">
       <div class="our-story">
@@ -110,5 +112,8 @@
         ANJANA UNNIKRISHNAN &nbsp;&nbsp; C0920017
       </p>
     </footer>
+    <script src="./scripts/script.js"></script>
+
+
   </body>
 </html>

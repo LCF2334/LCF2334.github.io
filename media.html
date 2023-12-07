@@ -6,6 +6,7 @@
     <title>MEDIA</title>
     <link rel="shortcut icon" href="./image/favicon.jpg" type="image/x-icon">
    <link rel="stylesheet" href="./media.css/media.css">
+   <link rel="stylesheet" href="./media.css/navigation.css">
    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
  </head>
@@ -16,29 +17,30 @@
           </div> 
     </header>
 
-     <!----Use the nav area to add hyperlinks to other pages within the website-->
-     <div id="navigation">
-        <div id="logo">
-          <a href="./index.html">
-            <img class="hello" src="./image/logo.png" alt="MONOCLES logo"></a>  </div>
   
-      <nav>
+  <!----Use the nav area to add hyperlinks to other pages within the website-->
+  <div id="navigation">
+    <div id="logo">
+      <a href="./index.html">
+        <img class="hello" src="./image/logo.png" alt="MONOCLES logo"></a>
+    </div>
+
+    <nav>
+      <div class="mobile-hamburger mobile-only" onclick="menu()">&#9776;</div>
+      <ul class="nav-list remove-nav" id="navbar">
         
-          <ul>
-            
-      
-            <li><a href="./index.html">Home </a> </li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./team.html">Our Team</a> </li>
-            <li><a href="./specials.html">Specials</a> </li>
-            <li><a href="./training.html"> Training</a></li>
-            <li><a href="./media.html">Media </a></li>
-            <li><a href="./faqs.html">FAQs</a></li>
-            <li><a href="./contact.html">Contact Us </a></li>
-                    </ul>
-    
-        </nav>
-      </div>
+        <div class="close-icon mobile-only" onclick="menu()">&#10060</div>
+        <li><a href="./index.html">Home </a> </li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./team.html">Our Team</a> </li>
+        <li><a href="./specials.html">Specials</a> </li>
+        <li><a href="./training.html"> Training</a></li>
+        <li><a href="./media.html">Media </a></li>
+        <li><a href="./faqs.html">FAQs</a></li>
+        <li><a href="./contact.html">Contact Us </a></li>
+      </ul>
+    </nav>
+  </div>
       
      
          <section>
@@ -97,7 +99,9 @@
       </footer>
     
 
-      
+      <script src="./scripts/script.js"></script>
+
+
     
 </body>
 
